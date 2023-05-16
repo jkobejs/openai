@@ -1,0 +1,23 @@
+[package]
+name = "openai"
+version = "0.0.1"
+authors = ["jkobejs"]
+description = "A simple async-openai abstraction for Rust"
+repository = "https://github.com/jkobejs/openai"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+keywords = ["openai", "gpt-3", "gpt-4", "async", "async-openai-wrapper"]
+categories = ["ai", "async", "openai", "gpt-3", "gpt-4", "async-openai-wrapper"]
+
+[dependencies]
+async-openai = "0.10.3"
+async-trait = "0.1.68"
+backoff = "0.4.0"
+futures = "0.3.28"
+mockall = "0.11.4"
+reqwest = "0.11.17"
+tiktoken-rs = { version = "0.4.2", features = ["async-openai"] }
+
+[dev-dependencies]
+anyhow = "1.0.71"
+tokio = { version = "1.28.0", features = ["full"] }
